@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESVE - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                                <img src="Image1.jpg" alt="ESVE Logo" id="company-logo">
+                <span class="company-name">ESVE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="outils.html">Fournitures d'outils</a></li>
+                <li><a href="pieces.html">Fournitures de pièces</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+        </div>
+    </section>
+
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-detailed">
+                    <h2>Nos coordonnées</h2>
+                    
+                    <div class="info-block">
+                        <h3><i class="fas fa-map-marker-alt"></i> Adresse</h3>
+                        <p>Boulevard France Afrique, Ouaga 2000<br>
+                        11 BP 1229 CMS OUAGA 11<br>
+                        Secteur 54-Section B - Lot 16 - Parcelle 01</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3><i class="fas fa-phone"></i> Téléphone</h3>
+                        <p>+226 05 56 25 92</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3><i class="fas fa-envelope"></i> Email</h3>
+                        <p>direction@svequipement.com</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3><i class="fas fa-clock"></i> Horaires</h3>
+                        <p>Lundi - Vendredi : 8h - 17h</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-detailed">
+                    <h2>Envoyez-nous un message</h2>
+                    <form action="contact/send.php" method="POST" id="main-contact-form"></form>
+                        <div class="form-group">
+                            <label for="nom">Nom complet *</label>
+                            <input type="text" id="nom" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="societe">Société</label>
+                            <input type="text" id="societe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sujet">Sujet *</label>
+                            <input type="text" id="sujet" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Même footer -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
