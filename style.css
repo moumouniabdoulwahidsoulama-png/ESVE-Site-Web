@@ -916,7 +916,7 @@ footer::before {
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid rgba(197, 160, 89, 0.2);
+    border-top: 1px solid rgba(244, 240, 245, 0.922);
     opacity: 0.6;
     font-size: 0.9rem;
 }
@@ -1112,6 +1112,28 @@ footer::before {
     }
 }
 
+/* ===== TEXTES BRILLANTS ===== */
+/* Liens du footer : blanc pur avec ombre brillante */
+.footer-section a {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    opacity: 1 !important; /* supprime l'assombrissement */
+}
+
+/* Bouton "Demander une intervention" dans la zone de contact */
+.contact-prompt .cta-button {
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+    background: transparent;
+    border: 2px solid #ffffff;
+    transition: all 0.3s ease;
+}
+
+.contact-prompt .cta-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1200px) {
     h1 {
@@ -1242,5 +1264,30 @@ footer::before {
     
     .brands li {
         text-align: center;
+    }
+}
+
+/* ===== VIDÉO DANS LA PAGE SERVICE ===== */
+.service-video {
+    width: 100%;
+    max-width: 900px;        /* même taille que l'image que tu voulais */
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;     /* bords très arrondis, comme demandé */
+    display: block;
+    margin: 30px auto;       /* centrée */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.service-video:hover {
+    transform: scale(1.02);
+}
+
+/* Pour mobile : un peu moins arrondi */
+@media (max-width: 768px) {
+    .service-video {
+        border-radius: 30px;
+        margin: 20px auto;
     }
 }
