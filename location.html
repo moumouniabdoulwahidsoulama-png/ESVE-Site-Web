@@ -11,13 +11,13 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                                <img src="Image1.jpg" alt="ESVE Logo" id="company-logo">
+                <img src="images/Image1.jpg" alt="ESVE Logo" id="company-logo">
                 <span class="company-name">ESVE</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="outils.html">Fournitures d'outils</a></li>
-                <li><a href="pieces.html">Fournitures de pièces</a></li>
+                <li><a href="outils.html">OAS/TDR</a></li>
+                <li><a href="pieces.html">Pièces/Composants</a></li>
                 <li><a href="location.html" class="active">Location</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -30,6 +30,8 @@
         </div>
     </nav>
 
+    <br><br><br>
+
     <section class="page-header">
         <div class="container">
             <h1>Location d'équipements industriels et BTP</h1>
@@ -39,37 +41,79 @@
     <section class="page-content">
         <div class="container">
             <div class="service-detail">
-                <p>Afin de répondre aux besoins temporaires ou urgents de vos chantiers, nous mettons à disposition un parc de matériels en location.</p>
+                <p class="intro-text">Afin de répondre aux besoins temporaires ou urgents de vos chantiers, nous mettons à disposition un parc de matériels en location, régulièrement entretenu et prêt à l'emploi.</p>
 
                 <div class="rental-grid">
-                    <div class="rental-item">
-                        <i class="fas fa-tractor"></i>
+                    <!-- Pelle hydraulique -->
+                    <div class="rental-card">
+                        <div class="rental-image">
+                            <img src="images/pelle.jfif" alt="Pelle hydraulique" onerror="this.src='https://picsum.photos/300/200?random=1'">
+                        </div>
+                        <div class="rental-icon">
+                            <i class="fas fa-tractor"></i>
+                        </div>
                         <h3>Pelles hydrauliques</h3>
-                        <p>Différentes capacités disponibles</p>
-                    </div>
-                    
-                    <div class="rental-item">
-                        <i class="fas fa-truck-loading"></i>
-                        <h3>Chargeuses</h3>
-                        <p>Pour tous vos besoins de manutention</p>
-                    </div>
-                    
-                    <div class="rental-item">
-                        <i class="fas fa-bolt"></i>
-                        <h3>Groupes électrogènes</h3>
-                        <p>De 20 à 500 kVA</p>
-                    </div>
-                    
-                    <div class="rental-item">
-                        <i class="fas fa-wind"></i>
-                        <h3>Compresseurs</h3>
-                        <p>Matériel pneumatique</p>
+                        <p>De 20 à 80 tonnes, équipées de divers accessoires (bennes, brise-roche, etc.).</p>
                     </div>
 
-                    <div class="rental-item">
-                        <i class="fas fa-boxes"></i>
-                        <h3>et bien d'autres</h3>
-                        <p>Une gamme étendue</p>
+                    <!-- Groupe électrogène, tour d'éclairage, compresseurs -->
+                    <div class="rental-card">
+                        <div class="rental-image">
+                            <img src="images/GROUPE ELECTROGENE.jfif" alt="Groupe électrogène" onerror="this.src='https://picsum.photos/300/200?random=2'">
+                        </div>
+                        <div class="rental-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Groupes électrogènes<br>Tours d'éclairage<br>Compresseurs</h3>
+                        <p>Puissance de 50 à 500 kVA, tours LED sur mât, compresseurs mobiles 5 à 20 m³/min.</p>
+                    </div>
+
+                    <!-- Niveleuse -->
+                    <div class="rental-card">
+                        <div class="rental-image">
+                            <img src="images/niveleuse.jfif" alt="Niveleuse" onerror="this.src='https://picsum.photos/300/200?random=3'">
+                        </div>
+                        <div class="rental-icon">
+                            <i class="fas fa-draw-polygon"></i>
+                        </div>
+                        <h3>Niveleuses</h3>
+                        <p>Pour le nivellement précis des terrains, routes et plateformes.</p>
+                    </div>
+
+                    <!-- Chargeuse -->
+                    <div class="rental-card">
+                        <div class="rental-image">
+                            <img src="images/chargeuse.jfif" alt="Chargeuse" onerror="this.src='https://picsum.photos/300/200?random=4'">
+                        </div>
+                        <div class="rental-icon">
+                            <i class="fas fa-truck-loading"></i>
+                        </div>
+                        <h3>Chargeuses</h3>
+                        <p>Sur pneus ou chenilles, godets de 2 à 10 m³, idéales pour le chargement et la manutention.</p>
+                    </div>
+
+                    <!-- Bulldozer -->
+                    <div class="rental-card">
+                        <div class="rental-image">
+                            <img src="images/buldozer.jfif" alt="Bulldozer" onerror="this.src='https://picsum.photos/300/200?random=5'">
+                        </div>
+                        <div class="rental-icon">
+                            <i class="fas fa-tractor"></i>
+                        </div>
+                        <h3>Bulldozer</h3>
+                        <p>Engins de terrassement puissants (lame et ripper) pour tous types de sols.</p>
+                    </div>
+
+                    <!-- Grue -->
+                    <div class="rental-card">
+                        <div class="rental-image">
+                            <img src="images/grue.jfif" alt="Grue" onerror="this.src='https://picsum.photos/300/200?random=6'">
+                        </div>
+                        <div class="rental-icon">
+                            <i class="fas fa-crane"></i>
+                        </div>
+                        <h3>Grue</h3>
+                        <p>Grues mobiles et sur chenilles, capacité de 20 à 200 tonnes, avec accessoires de levage.</p>
                     </div>
                 </div>
 
@@ -82,7 +126,7 @@
     </section>
 
     <footer>
-        <!-- Même footer -->
+        <!-- Votre footer existant -->
     </footer>
     <script src="script.js"></script>
 </body>

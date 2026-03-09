@@ -120,8 +120,8 @@ h1, h2, h3, .section-tag, .stat-number, .lead, .quote-text {
 }
 
 #company-logo {
-    height: 60px;
-    width: 60px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%; /* Logo circulaire */
     object-fit: cover; /* Pour que l'image remplisse bien le cercle */
     border: 2px solid var(--primary);
@@ -674,6 +674,7 @@ h1, h2, h3, .section-tag, .stat-number, .lead, .quote-text {
     border-radius: 15px;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    border: 4px;
 }
 
 .product-gallery img:hover {
@@ -1060,7 +1061,7 @@ footer::before {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
-    width: 1O0px;
+    width: 1150px;
     height: auto;
     margin-right: 40px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -1271,7 +1272,7 @@ footer::before {
 .service-video {
     width: 100%;
     max-width: 900px;        /* même taille que l'image que tu voulais */
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     border-radius: 50px;     /* bords très arrondis, comme demandé */
     display: block;
@@ -1289,5 +1290,293 @@ footer::before {
     .service-video {
         border-radius: 30px;
         margin: 20px auto;
+    }
+}
+
+
+
+/* Grille de location */
+.rental-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.rental-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.rental-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.rental-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.rental-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+    border: 4px;
+}
+
+.rental-card:hover .rental-image img {
+    transform: scale(1.05);
+}
+
+.rental-icon {
+    position: absolute;
+    top: 160px; /* à cheval sur l'image */
+    right: 20px;
+    background: #c99b3b;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 3px solid white;
+}
+
+.rental-card h3 {
+    font-size: 1.6rem;
+    margin: 2.5rem 1rem 0.5rem 1rem;
+    color: #0f3b4f;
+    line-height: 1.3;
+}
+
+.rental-card p {
+    margin: 0 1rem 1.5rem 1rem;
+    color: #4a5e6b;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .rental-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        top: 150px;
+        right: 15px;
+    }
+    .rental-card h3 {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Intro text */
+.intro-text {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: #2c3e50;
+}
+
+/* Grille des pièces */
+.pieces-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.piece-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.piece-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.piece-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.piece-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
+    border: #b8862c;
+}
+
+.piece-card:hover .piece-image img {
+    transform: scale(1.05);
+}
+
+.piece-icon {
+    position: absolute;
+    top: 160px; /* Ajustez selon la hauteur de l'image */
+    right: 20px;
+    background: #c99b3b;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 3px solid white;
+}
+
+.piece-card h3 {
+    font-size: 1.6rem;
+    margin: 2.5rem 1rem 0.5rem 1rem;
+    color: #0f3b4f;
+    line-height: 1.3;
+}
+
+.piece-card p {
+    margin: 0 1rem 1.5rem 1rem;
+    color: #4a5e6b;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Section Garantie */
+.guarantee-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #c99b3b;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 3rem auto;
+    max-width: 900px;
+    border: 1px solid #c99b3b;
+}
+
+.guarantee-text {
+    flex: 2;
+    text-align: left;
+}
+
+.guarantee-text i {
+    font-size: 3rem;
+    color: #312a1a;
+    margin-bottom: 1rem;
+}
+
+.guarantee-text h3 {
+    font-size: 2rem;
+    color: #0f3b4f;
+    margin-bottom: 0.5rem;
+}
+
+.guarantee-text p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.guarantee-image {
+    flex: 1;
+    text-align: center;
+}
+
+.guarantee-image img {
+    width: 150px;              
+    height: 150px;             
+    object-fit: cover;        
+    border-radius: 50%;       
+    border: 3px solid #c99b3b; 
+}
+
+/* Marques */
+.brands {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.brands ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #0f3b4f;
+}
+
+.brands li {
+    background: #c99b3b;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+}
+
+/* Bouton de contact */
+.contact-prompt {
+    text-align: center;
+    margin: 4rem 0 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #c99b3b;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #b8862c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .guarantee-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .guarantee-text {
+        text-align: center;
+    }
+    .piece-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        top: 150px;
+        right: 15px;
+    }
+    .piece-card h3 {
+        font-size: 1.4rem;
+        margin-top: 2rem;
     }
 }

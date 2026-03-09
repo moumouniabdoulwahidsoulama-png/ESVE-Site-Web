@@ -9,16 +9,15 @@
 </head>
 <body>
     <nav class="navbar">
-        <!-- Même navigation -->
         <div class="nav-container">
             <div class="logo">
-                                <img src="Image1.jpg" alt="ESVE Logo" id="company-logo">
+                <img src="images/Image1.jpg" alt="ESVE Logo" id="company-logo">
                 <span class="company-name">ESVE</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="outils.html">Fournitures d'outils</a></li>
-                <li><a href="pieces.html" class="active">Fournitures de pièces</a></li>
+                <li><a href="outils.html">OAS/TDR</a></li>
+                <li><a href="pieces.html" class="active">Pièces/Composants</a></li>
                 <li><a href="location.html">Location</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -31,6 +30,8 @@
         </div>
     </nav>
 
+    <br><br><br>
+
     <section class="page-header">
         <div class="container">
             <h1>Fournitures de pièces et composants mécaniques</h1>
@@ -40,36 +41,81 @@
     <section class="page-content">
         <div class="container">
             <div class="service-detail">
-                <p>Nous disposons d'un portefeuille complet de pièces de rechange et composants mécaniques, disponibles en version neuve ou reconditionnée.</p>
+                <p class="intro-text">Nous disposons d'un portefeuille complet de pièces de rechange et composants mécaniques, disponibles en version neuve ou reconditionnée.</p>
 
-                <div class="products-grid">
-                    <div class="product-category">
-                        <h3><i class="fas fa-engine"></i> Moteurs</h3>
-                        <p>Moteurs neufs et reconditionnés pour toutes marques</p>
+                <!-- Grille de cartes pour les catégories -->
+                <div class="pieces-grid">
+                    <!-- Moteurs -->
+                    <div class="piece-card">
+                        <div class="piece-image">
+                            <img src="images/CAT MOTEUR.jfif" alt="Moteur" onerror="this.src='https://picsum.photos/300/200?random=10'">
+                        </div>
+                        <div class="piece-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3>Moteurs</h3>
+                        <p>Moteurs neufs et reconditionnés pour toutes marques (Caterpillar, Komatsu, Volvo).</p>
                     </div>
-                    
-                    <div class="product-category">
-                        <h3><i class="fas fa-cogs"></i> Transmissions</h3>
-                        <p>Boîtes de transmission, convertisseurs de couple, boîtes de transfert</p>
+
+                    <!-- Transmissions -->
+                    <div class="piece-card">
+                        <div class="piece-image">
+                            <img src="images/TRANSMISSION.webp" alt="Transmission" onerror="this.src='https://picsum.photos/300/200?random=11'">
+                        </div>
+                        <div class="piece-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Transmissions</h3>
+                        <p>Boîtes de transmission, convertisseurs de couple, boîtes de transfert.</p>
                     </div>
-                    
-                    <div class="product-category">
-                        <h3><i class="fas fa-oil-can"></i> Systèmes hydrauliques</h3>
-                        <p>Pompes hydrauliques, vérins, systèmes complets</p>
+
+                    <!-- Systèmes hydrauliques -->
+                    <div class="piece-card">
+                        <div class="piece-image">
+                            <img src="images/pompe.jfif" alt="Système hydraulique" onerror="this.src='https://picsum.photos/300/200?random=12'">
+                        </div>
+                        <div class="piece-icon">
+                            <i class="fas fa-oil-can"></i>
+                        </div>
+                        <h3>Systèmes hydrauliques</h3>
+                        <p>Pompes hydrauliques, vérins, systèmes complets.</p>
+                    </div>
+
+                    <!-- Convertisseurs de couple -->
+                    <div class="piece-card">
+                        <div class="piece-image">
+                            <img src="images/bulldozer-torque-converter-1000x1000.jpg" alt="Convertisseur de couple" onerror="this.src='https://picsum.photos/300/200?random=13'">
+                        </div>
+                        <div class="piece-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Convertisseurs de couple</h3>
+                        <p>Convertisseurs neufs et reconditionnés pour transmissions automatiques.</p>
                     </div>
                 </div>
 
+                <!-- Marques distribuées -->
                 <div class="brands">
-                    <h3>Marques principales :</h3>
+                    <h3>Nos Marques Distribuées :</h3>
                     <ul>
                         <li>Caterpillar</li>
                         <li>Komatsu</li>
                         <li>Volvo</li>
+                        <li>BERCO</li>
+                        <li>BYG</li>
                     </ul>
                 </div>
 
-                <div class="note">
-                    <p><i class="fas fa-info-circle"></i> Nous proposons des pièces neuves ou reconditionnées en atelier ou chez le constructeur.</p>
+                <!-- Section Garantie -->
+                <div class="guarantee-section">
+                    <div class="guarantee-text">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Garantie un an</h3>
+                        <p>Toutes nos pièces bénéficient d'une garantie constructeur d'un an, pour une tranquillité d'esprit totale. Que vous choisissiez du neuf ou du reconditionné, vous êtes couvert.</p>
+                    </div>
+                    <div class="guarantee-image">
+                        <img src="images/garantie1.png" alt="Garantie un an">
+                    </div>
                 </div>
 
                 <div class="contact-prompt">
@@ -81,7 +127,7 @@
     </section>
 
     <footer>
-        <!-- Même footer -->
+        <!-- Votre footer existant -->
     </footer>
     <script src="script.js"></script>
 </body>
