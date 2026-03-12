@@ -1641,8 +1641,8 @@ font-weight:700;
 }
 
 .logo img{
-width:50px;
-height:50px;
+width:150px;
+height:150px;
 border-radius:50%;
 }
 
@@ -1848,4 +1848,40 @@ flex-direction:column;
 gap:20px;
 }
 
+}
+
+/* SECTION MISSION */
+
+.mission-list{
+list-style:none;
+margin-top:25px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.mission-list li{
+display:flex;
+align-items:flex-start;
+gap:15px;
+font-size:16px;
+line-height:1.6;
+}
+
+.mission-list i{
+font-size:22px;
+color:#c5a059;
+margin-top:5px;
+min-width:25px;
+}
+
+.mission-list strong{
+color:#1e2b3a;
+font-size:17px;
+}
+
+.service-card{
+text-decoration:none;
+color:inherit;
+display:block;
 }
