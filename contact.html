@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
+    <!-- ── BARRE CTA STICKY (toujours visible en bas) ── -->
+<div id="sticky-cta" style="
+  position:fixed; bottom:0; left:0; right:0; z-index:999;
+  background:rgba(10,10,15,0.96); backdrop-filter:blur(10px);
+  border-top:2px solid #D4A017;
+  display:flex; align-items:center; justify-content:center;
+  gap:14px; padding:12px 20px; flex-wrap:wrap;">
+  <span style="color:#ccc; font-size:13px; font-weight:600;">
+    🔧 Un projet ou besoin de pièces ?
+  </span>
+  <a href="contact.html" style="background:#D4A017;color:#0A0A0F;padding:9px 22px;
+     border-radius:6px;font-weight:700;font-size:13px;text-decoration:none;">
+    📋 Demander un devis
+  </a>
+  <a href="#services" style="border:1.5px solid #D4A017;color:#D4A017;padding:9px 22px;
+     border-radius:6px;font-weight:700;font-size:13px;text-decoration:none;background:transparent;">
+    🏗️ Nos services
+  </a>
+  <a href="https://moumouniabdoulwahidsoulama-png.github.io/ESVE_DIGITAL/" target="_blank"
+     style="border:1.5px solid rgba(255,255,255,0.2);color:#aaa;padding:9px 22px;
+     border-radius:6px;font-weight:700;font-size:13px;text-decoration:none;background:transparent;">
+    💻 Services Digitaux
+  </a>
+</div>
+
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
@@ -75,37 +101,63 @@
                     </div>
                 </div>
 
+                <!-- FORMULAIRE DE CONTACT -->
                 <div class="contact-form-detailed">
                     <h2>Envoyez-nous un message</h2>
+
+
                     <form action="contact/send.php" method="POST" id="main-contact-form">
+                        <!-- TÉLÉPHONE — OBLIGATOIRE -->
                         <div class="form-group">
-                            <label for="nom">Nom complet *</label>
-                            <input type="text" id="nom" required>
+                            <label for="telephone">
+                                Numéro de téléphone <span class="required-star">*</span>
+                            </label>
+                            <input
+                                type="tel"
+                                id="telephone"
+                                name="telephone"
+                                placeholder="+226 XX XX XX XX"
+                                required
+                            >
                         </div>
-                        
+
+                        <!-- NOM — OPTIONNEL -->
                         <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" required>
+                            <label for="nom">Nom complet <span class="field-optional"></span></label>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom complet">
                         </div>
-                        
+
+                        <!-- EMAIL — OPTIONNEL -->
                         <div class="form-group">
-                            <label for="societe">Société</label>
-                            <input type="text" id="societe">
+                            <label for="email">Email <span class="field-optional"></span></label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com">
                         </div>
-                        
+
+                        <!-- SOCIÉTÉ — OPTIONNEL -->
                         <div class="form-group">
-                            <label for="sujet">Sujet *</label>
-                            <input type="text" id="sujet" required>
+                            <label for="societe">Société <span class="field-optional"></span></label>
+                            <input type="text" id="societe" name="societe" placeholder="Nom de votre société">
                         </div>
-                        
+
+                        <!-- SUJET — OPTIONNEL -->
                         <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" rows="6" required></textarea>
+                            <label for="sujet">Sujet <span class="field-optional"></span></label>
+                            <input type="text" id="sujet" name="sujet" placeholder="Objet de votre message">
                         </div>
-                        
-                        <button type="submit" class="submit-btn">Envoyer le message</button>
+
+                        <!-- MESSAGE — OPTIONNEL -->
+                        <div class="form-group">
+                            <label for="message">Message <span class="field-optional"></span></label>
+                            <textarea id="message" name="message" rows="6" placeholder="Décrivez votre besoin..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+
                     </form>
                 </div>
+
             </div>
         </div>
     </section>
@@ -125,6 +177,7 @@
                         <li><a href="pieces.html">Pièces/Composants</a></li>
                         <li><a href="location.html">Location</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="https://moumouniabdoulwahidsoulama-png.github.io/ESVE_DIGITAL/" target="_blank" style="color:#D4A017;">💻 Services Digitaux</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
